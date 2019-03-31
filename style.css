@@ -597,33 +597,40 @@ body.page .main-navigation {
 }
 
 .menuBurger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
-  top: 50px;
-  left: 0px;
-  width: 50px;
-  height: 50px;
-  background-color: grey;
+  top: 53px;
+  left: 23px;
+  width: 40px;
+  height: 33px;
   color: white;
   z-index: 100;
   cursor: pointer;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   -webkit-transform: rotateZ(0deg);
           transform: rotateZ(0deg);
-  -webkit-transition: background-color 0.7s, -webkit-transform 0.7s;
-  transition: background-color 0.7s, -webkit-transform 0.7s;
-  transition: background-color 0.7s, transform 0.7s;
-  transition: background-color 0.7s, transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transition: color 0.7s, -webkit-transform 0.7s;
+  transition: color 0.7s, -webkit-transform 0.7s;
+  transition: color 0.7s, transform 0.7s;
+  transition: color 0.7s, transform 0.7s, -webkit-transform 0.7s;
+}
+
+.menuBurger > img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menuBurger:hover {
-  background-color: white;
+  color: gray;
   -webkit-transform: rotateZ(90deg);
           transform: rotateZ(90deg);
-}
-
-.menuBurger:active {
-  background-color: white;
-  -webkit-transform: rotateZ(360deg);
-          transform: rotateZ(360deg);
 }
 
 /*--------------------------------------------------------------

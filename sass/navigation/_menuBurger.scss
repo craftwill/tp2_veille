@@ -1,22 +1,24 @@
 .menuBurger{
+display: flex;
+
     position: fixed;
-    top: 50px;
-    left: 0px;
-    width: 50px;
-    height: 50px;
-    background-color: grey;
+    top: 53px;
+    left: 23px;
+    width: 40px;
+    height: 33px;
     color: white;
     z-index: 100;
     cursor: pointer;
 
+    transform-origin: 50% 50%;
     transform: rotateZ(0deg);
-    transition: background-color 0.7s, transform 0.7s;
-    &:hover{
-        background-color: white;
-        transform: rotateZ(90deg);
+    transition: color 0.7s, transform 0.7s;
+    &>img{
+        display: flex;
+        justify-content: center;
     }
-    &:active{
-        background-color: white;
-        transform: rotateZ(360deg);
+    &:hover{
+        color: rgb(128, 128, 128);
+        transform: rotateZ(90deg);
     }
 }
