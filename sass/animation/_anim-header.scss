@@ -1,0 +1,29 @@
+@keyframes anim1 
+{
+    from{
+        transform: scale(0.1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes anim2 
+{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+
+.anim1 {
+    //transform-origin: top center;
+    animation: anim1 2s forwards;
+}
+
+.anim3 {
+    //transform-origin: top center;
+    animation: anim2 3s forwards;
+}

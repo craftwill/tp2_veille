@@ -1,0 +1,69 @@
+
+
+#liste-cours {
+      margin-bottom:0 ;
+}
+
+.liste-cours {
+    display : grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 2% 2% 0% 15%;
+    font-size : 1.5em;
+  
+    .domaine-1 { background-color: #3db36e; color : #fff; }
+    .domaine-2 { background-color: #d3a145; color : #aaa;}
+    .domaine-3 { background-color: #6464eb; color : #fff;}
+    .domaine-4 { background-color: #c2b85c; color : #fff;}
+    .domaine-5 { background-color: #ca3a65; color : #fff;}
+    
+    .domaine-1, .domaine-2, .domaine-3, .domaine-4, .domaine-5
+    {
+        box-shadow: 4px 4px 4px #ccccc2;
+        transition: box-shadow 0.7s;
+    }
+
+    .domaine-1:hover, .domaine-2:hover, .domaine-3:hover, .domaine-4:hover, .domaine-5:hover
+    {
+        box-shadow: 4px 4px 4px #888888;
+    }
+
+    //.domaine-6 { background-color: #251b04; color : #fff;}
+    h3,h4 { padding:5px;}
+
+    @include media(mobile){
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        font-size : 1.3em;
+
+    }
+
+    @include media(tablet) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            font-size : 1em;
+     
+    }
+
+    @include media(desktop) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+   
+    }
+
+    @include media(wide) {
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+     
+        }
+
+    .entry-title {
+        h3{
+            font-size: .5em;
+        }
+        h4{
+            font-size: .4em;
+        }
+    }
+
+}

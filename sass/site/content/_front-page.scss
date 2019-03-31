@@ -1,0 +1,38 @@
+// Modification du layout du front page
+.wp-block-media-text-frontPage{
+    display: flex;
+    flex-direction: column;
+}
+
+// Modification de la taille des images
+.attachment-thumbnail{
+    width: 250px;
+    box-shadow: 4px 4px 4px #cccccc;
+    transition: box-shadow 0.7s, width 0.7s;
+}
+
+.attachment-thumbnail:hover{
+    width: 260px;
+    box-shadow: 4px 4px 4px #888888;
+}
+
+// Modification des balise `a` des aperçus
+.a-une-image, .a-quatre-images{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: white;
+	font-size: 25px;
+}
+
+.entry-content-perso{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.has-background{
+    box-shadow: 4px 4px 4px #cccccc;
+}
