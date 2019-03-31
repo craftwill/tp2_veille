@@ -22,7 +22,25 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="site">
+	
+	<!-- Menu En Mobile -->
 	<div class="menuBurger"><img src="wp-content/themes/tp2-veille/images/menuBurger.png" alt="menu"></div>
+	<div class="menuMobile">
+		<div>
+				<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
+					<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_class'     => 'main-menu',
+								'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							)
+						);
+					?>
+			<?php endif; ?>
+		</div>
+	</div>
+
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentynineteen' ); ?></a>
 
 		<header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">

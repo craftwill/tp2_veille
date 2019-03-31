@@ -1,5 +1,5 @@
 .menuBurger{
-display: flex;
+    display: flex;
 
     position: fixed;
     top: 53px;
@@ -21,4 +21,21 @@ display: flex;
         color: rgb(128, 128, 128);
         transform: rotateZ(90deg);
     }
+}
+
+.menuMobile{
+    display: flex;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    
+    transition: background-color 0.7s, transform 0.7s;
+    transform: translateX(-100vw);
+
+    z-index: 99;
 }

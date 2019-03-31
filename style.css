@@ -633,6 +633,26 @@ body.page .main-navigation {
           transform: rotateZ(90deg);
 }
 
+.menuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #191919;
+  color: white;
+  -webkit-transition: background-color 0.7s, -webkit-transform 0.7s;
+  transition: background-color 0.7s, -webkit-transform 0.7s;
+  transition: background-color 0.7s, transform 0.7s;
+  transition: background-color 0.7s, transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+  z-index: 99;
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
