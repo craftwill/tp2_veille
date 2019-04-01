@@ -34,13 +34,8 @@
 				<?php
 					the_content();
 				?>
-				<?php
-					echo "Professeurs qui offrent le cours: " . get_field('professeurs') . "\n";
-					echo "Professeurs: " . get_field('Professeurs') . "\n";
-					echo "Professeurs: " . get_field('Professeurs') . "\n";
-					echo "Professeurs: " . get_field('Professeurs') . "\n";
-					echo "Professeurs: " . get_field('Professeurs') . "\n";
-				?>
+				<?php echo "Professeurs qui offrent le cours: " . get_field('professeurs') . "<br>";?>
+				<?php echo "Durée du cours: " . get_field('duree') . "<br>"; ?>
 			</div>
 		</div>
 	</div><!-- .entry-content -->
