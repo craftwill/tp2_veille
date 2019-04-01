@@ -72,8 +72,13 @@
 
 }
 
+// Faire disparaitre le menu en haut pour le menu burger en petit écran
+.site-branding>#site-navigation{
+    display: block;
+}
+
 @media only screen and (max-width: 600px){
-    .main-navigation{
+    .site-branding>#site-navigation{
         display: none;
     }
 }

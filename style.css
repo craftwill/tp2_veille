@@ -599,8 +599,8 @@ body.page .main-navigation {
 .menuBurger {
   display: none;
   position: fixed;
-  top: 30px;
-  left: 23px;
+  top: 15px;
+  left: 13px;
   width: 40px;
   height: 33px;
   color: white;
@@ -774,8 +774,12 @@ body.page .main-navigation {
   }
 }
 
+.site-branding > #site-navigation {
+  display: block;
+}
+
 @media only screen and (max-width: 600px) {
-  .main-navigation {
+  .site-branding > #site-navigation {
     display: none;
   }
 }
