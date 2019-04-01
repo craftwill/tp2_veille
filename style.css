@@ -1056,32 +1056,32 @@ body {
 
 .anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(1) {
   opacity: 0;
-  -webkit-animation: animApparitionBoucle 2s forwards;
-          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation: animApparitionBoucle 3s forwards;
+          animation: animApparitionBoucle 3s forwards;
   -webkit-animation-delay: 0.16667s;
           animation-delay: 0.16667s;
 }
 
 .anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(2) {
   opacity: 0;
-  -webkit-animation: animApparitionBoucle 2s forwards;
-          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation: animApparitionBoucle 3s forwards;
+          animation: animApparitionBoucle 3s forwards;
   -webkit-animation-delay: 0.33333s;
           animation-delay: 0.33333s;
 }
 
 .anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(3) {
   opacity: 0;
-  -webkit-animation: animApparitionBoucle 2s forwards;
-          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation: animApparitionBoucle 3s forwards;
+          animation: animApparitionBoucle 3s forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
 
 .anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(4) {
   opacity: 0;
-  -webkit-animation: animApparitionBoucle 2s forwards;
-          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation: animApparitionBoucle 3s forwards;
+          animation: animApparitionBoucle 3s forwards;
   -webkit-animation-delay: 0.66667s;
           animation-delay: 0.66667s;
 }
