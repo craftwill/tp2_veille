@@ -625,7 +625,7 @@ body.page .main-navigation {
           justify-content: center;
 }
 
-.menuMobile {
+.parent, .menuMobile {
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -638,6 +638,9 @@ body.page .main-navigation {
   left: 0px;
   width: 100vw;
   height: 100vh;
+}
+
+.menuMobile {
   background-color: #191919;
   -webkit-transition: background-color 0.7s, -webkit-transform 0.7s;
   transition: background-color 0.7s, -webkit-transform 0.7s;
@@ -1024,29 +1027,21 @@ body {
   }
 }
 
-@-webkit-keyframes animApparitionHaut {
+@-webkit-keyframes animApparitionBoucle {
   from {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
   }
 }
 
-@keyframes animApparitionHaut {
+@keyframes animApparitionBoucle {
   from {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
   }
 }
 
@@ -1059,32 +1054,36 @@ body {
   color: blue;
 }
 
-.anim2 .menu-nav-container .main-menu:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-  -webkit-animation: animApparitionHaut 2s forwards;
-          animation: animApparitionHaut 2s forwards;
+.anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(1) {
+  opacity: 0;
+  -webkit-animation: animApparitionBoucle 2s forwards;
+          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation-delay: 0.16667s;
+          animation-delay: 0.16667s;
 }
 
-.anim2 .menu-nav-container .main-menu:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-  -webkit-animation: animApparitionHaut 2s forwards;
-          animation: animApparitionHaut 2s forwards;
+.anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: animApparitionBoucle 2s forwards;
+          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation-delay: 0.33333s;
+          animation-delay: 0.33333s;
 }
 
-.anim2 .menu-nav-container .main-menu:nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-  -webkit-animation: animApparitionHaut 2s forwards;
-          animation: animApparitionHaut 2s forwards;
+.anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: animApparitionBoucle 2s forwards;
+          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 
-.anim2 .menu-nav-container .main-menu:nth-child(4) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-  -webkit-animation: animApparitionHaut 2s forwards;
-          animation: animApparitionHaut 2s forwards;
+.anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: animApparitionBoucle 2s forwards;
+          animation: animApparitionBoucle 2s forwards;
+  -webkit-animation-delay: 0.66667s;
+          animation-delay: 0.66667s;
 }
 
 .anim3 {
@@ -1093,6 +1092,6 @@ body {
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "helvetica", "Arial";
 }
 /*# sourceMappingURL=style.css.map */
