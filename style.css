@@ -989,8 +989,8 @@ body {
 
 @-webkit-keyframes anim1 {
   from {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
   }
   to {
     -webkit-transform: scale(1);
@@ -1000,8 +1000,8 @@ body {
 
 @keyframes anim1 {
   from {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
   }
   to {
     -webkit-transform: scale(1);
@@ -1058,32 +1058,32 @@ body {
   opacity: 0;
   -webkit-animation: animApparitionBoucle 2s forwards;
           animation: animApparitionBoucle 2s forwards;
-  -webkit-animation-delay: 0.16667s;
-          animation-delay: 0.16667s;
+  -webkit-animation-delay: 0.14286s;
+          animation-delay: 0.14286s;
 }
 
 .anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(2) {
   opacity: 0;
   -webkit-animation: animApparitionBoucle 2s forwards;
           animation: animApparitionBoucle 2s forwards;
-  -webkit-animation-delay: 0.33333s;
-          animation-delay: 0.33333s;
+  -webkit-animation-delay: 0.28571s;
+          animation-delay: 0.28571s;
 }
 
 .anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(3) {
   opacity: 0;
   -webkit-animation: animApparitionBoucle 2s forwards;
           animation: animApparitionBoucle 2s forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.42857s;
+          animation-delay: 0.42857s;
 }
 
 .anim2 > .menu-nav-container > .main-menu > .menu-item:nth-child(4) {
   opacity: 0;
   -webkit-animation: animApparitionBoucle 2s forwards;
           animation: animApparitionBoucle 2s forwards;
-  -webkit-animation-delay: 0.66667s;
-          animation-delay: 0.66667s;
+  -webkit-animation-delay: 0.57143s;
+          animation-delay: 0.57143s;
 }
 
 .anim3 {
