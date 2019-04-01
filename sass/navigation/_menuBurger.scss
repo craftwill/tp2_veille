@@ -1,14 +1,5 @@
 .menuBurger{
-    display: none;
-
-    position: fixed;
-    top: 15px;
-    left: 13px;
-    width: 40px;
-    height: 33px;
-    color: white;
-    z-index: 100;
-    cursor: pointer;
+    @include menu-burger-fixed(15px, 13px);
 
     transform-origin: 50% 50%;
     transform: rotateZ(0deg);

@@ -1,0 +1,12 @@
+@mixin menu-burger-fixed($top, $left) {
+    display: none;
+
+    position: fixed;
+    top: $top;
+    left: $left;
+    width: 40px;
+    height: 33px;
+    color: white;
+    z-index: 100;
+    cursor: pointer;
+}
