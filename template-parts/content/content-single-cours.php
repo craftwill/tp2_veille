@@ -34,6 +34,7 @@
 				<?php
 					the_content();
 				?>
+				<?php echo "Sigle: " . get_field('sigle') . "<br>"; ?>
 				<?php echo "Professeurs qui offrent le cours: " . get_field('professeurs') . "<br>";?>
 				<?php echo "Durée du cours: " . get_field('duree') . "<br>"; ?>
 			</div>
