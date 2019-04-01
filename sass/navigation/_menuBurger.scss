@@ -1,8 +1,8 @@
 .menuBurger{
-    display: flex;
+    display: none;
 
     position: fixed;
-    top: 53px;
+    top: 30px;
     left: 23px;
     width: 40px;
     height: 33px;
@@ -17,14 +17,12 @@
         display: flex;
         justify-content: center;
     }
-    &:hover{
-        color: rgb(128, 128, 128);
-        transform: rotateZ(90deg);
-    }
 }
 
 .menuMobile{
-    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
 
     position: fixed;
     top: 0px;
@@ -32,10 +30,34 @@
     width: 100vw;
     height: 100vh;
     background-color: rgb(25, 25, 25);
-    color: white;
     
     transition: background-color 0.7s, transform 0.7s;
     transform: translateX(-100vw);
 
     z-index: 99;
+
+    & .menu-item-has-children{
+        display: none;
+    }
+    & .main-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0px;
+        & a{
+            font-weight: 1000;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .menuBurger{
+        display: flex;
+    }
+    .menuMobile{
+        display: flex;
+    }
 }

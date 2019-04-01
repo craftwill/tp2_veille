@@ -597,11 +597,9 @@ body.page .main-navigation {
 }
 
 .menuBurger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: fixed;
-  top: 53px;
+  top: 30px;
   left: 23px;
   width: 40px;
   height: 33px;
@@ -627,23 +625,20 @@ body.page .main-navigation {
           justify-content: center;
 }
 
-.menuBurger:hover {
-  color: gray;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
-}
-
 .menuMobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
   height: 100vh;
   background-color: #191919;
-  color: white;
   -webkit-transition: background-color 0.7s, -webkit-transform 0.7s;
   transition: background-color 0.7s, -webkit-transform 0.7s;
   transition: background-color 0.7s, transform 0.7s;
@@ -651,6 +646,46 @@ body.page .main-navigation {
   -webkit-transform: translateX(-100vw);
           transform: translateX(-100vw);
   z-index: 99;
+}
+
+.menuMobile .menu-item-has-children {
+  display: none;
+}
+
+.menuMobile .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.menuMobile .main-menu a {
+  font-weight: 1000;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .menuBurger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menuMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -736,6 +771,12 @@ body.page .main-navigation {
   }
   .site-header.featured-image .site-branding .site-description {
     font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-navigation {
+    display: none;
   }
 }
 
