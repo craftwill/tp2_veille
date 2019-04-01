@@ -1,9 +1,7 @@
 window.addEventListener('load',function(){
-    console.log('menu burger');
     let ouvert = false;
     let menuBurger = document.getElementsByClassName("menuBurger")[0];
     let menuMobile = document.getElementsByClassName("menuMobile")[0];
-
     menuBurger.addEventListener("click", function(e){
         ouvert = !ouvert;
         if(ouvert){
@@ -16,5 +14,4 @@ window.addEventListener('load',function(){
             menuBurger.style.transform = "rotateZ(0deg)";
         }
     });
-
 });
