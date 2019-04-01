@@ -34,6 +34,13 @@
 				<?php
 					the_content();
 				?>
+				<?php
+					echo "Professeurs qui offrent le cours: " . get_field('professeurs') . "\n";
+					echo "Professeurs: " . get_field('Professeurs') . "\n";
+					echo "Professeurs: " . get_field('Professeurs') . "\n";
+					echo "Professeurs: " . get_field('Professeurs') . "\n";
+					echo "Professeurs: " . get_field('Professeurs') . "\n";
+				?>
 			</div>
 		</div>
 	</div><!-- .entry-content -->
