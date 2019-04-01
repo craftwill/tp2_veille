@@ -16,11 +16,37 @@
     to{
         opacity: 1;
     }
-} 
+}
+
+@keyframes animApparitionHaut{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 .anim1 {
     //transform-origin: top center;
     animation: anim1 2s forwards;
+}
+
+.anim2 {
+    color: blue;
+    & .menu-nav-container .main-menu {
+        // Loop de 1 a 4.
+        // Pour une raison étrange, cette boucle se compile bien en css et le fichier de style.css marche bien
+        // Mais les animations semblent quand mêmes tous partir en mêmes temps...
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {          
+                animation-delay: $i * (1s / 5);
+                animation: animApparitionHaut 2s forwards;
+            }
+        }
+    }
 }
 
 .anim3 {
