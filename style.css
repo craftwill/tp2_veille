@@ -1033,4 +1033,8 @@ body {
   -webkit-animation: anim2 3s forwards;
           animation: anim2 3s forwards;
 }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
