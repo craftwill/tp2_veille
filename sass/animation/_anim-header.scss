@@ -40,7 +40,7 @@
             @for $i from 1 through 4 {
                 &>.menu-item:nth-child(#{$i}) {
                     opacity: 0;
-                    animation: animApparitionBoucle 3s forwards;
+                    animation: animApparitionBoucle 2s forwards;
                     animation-delay: $i * (1s / 6);
                 }
             }
